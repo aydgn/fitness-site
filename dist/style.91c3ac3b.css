@@ -29,8 +29,6 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 .nav-container nav {
   display: flex;
@@ -50,30 +48,17 @@ header {
 
 /* HEADER END */
 /* CONTENT START  */
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .hero {
   background-image: url("/bg-pattern.e70029ad.jpg");
-  padding: 5rem 0 0 0;
-  height: 600px;
+  padding: 5rem 0 0 5rem;
   display: flex;
-  justify-content: flex-end;
-}
-.hero .hero-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .hero .hero-left .date-author {
   color: #707070;
   font-weight: bold;
 }
 .hero .hero-left .desc {
-  /*   margin-left: -5rem;*/
+  margin-left: -5rem;
   margin-top: 3rem;
   align-self: flex-start;
 }
