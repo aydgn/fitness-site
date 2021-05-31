@@ -7,30 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.scss">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap" rel="stylesheet">
   <title>Fitness</title>
 </head>
 <header>
-  <div class="navContainer">
+  <!-- FIXME: Navbar is not aligning properly -->
+  <div class="nav-container">
     <nav id="left">
-      <a href="#">Workouts</a> &#9830;
-      <a href="#">Healty Eating</a> &#9830;
+      <a href="#">Workouts</a> <span class="diamond">&#9670;</span>
+      <a href="#">Healty Eating</a> <span class="diamond">&#9670;</span>
       <a href="#">Diets & Weight Loss</a>
     </nav>
-    <div id="logo"><img src="/assets/img/logo.png" alt="Logo" height="60px"></div>
+    <div id="logo">
+      <img src="/assets/img/logo.png" alt="Logo" height="48px">
+    </div>
     <nav id="right">
-      <a href="#">Run</a> &#9830;
-      <a href="#">Mind & Body</a> &#9830;
+      <a href="#">Run</a> <span class="diamond">&#9670;</span>
+      <a href="#">Mind & Body</a> <span class="diamond">&#9670;</span>
       <a href="#">Health</a>
-      <span>
+      <a href="#">
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
           <path
             d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
         </svg>
-      </span>
+      </a>
     </nav>
   </div>
 </header>
+
+<section class="hero">
+  <div class="hero-left">
+    <h4>Workout Trends</h4>
+    <h1>The Best <br /> Abs Exercises You've Never Seen Before</h1>
+    <div class="date-author">Oct 20, 2019 — By Jessica Smith</div>
+    <div class="desc">
+      <img src="/assets/img/woman2.webp" alt="" height="250px">
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="/assets/img/woman1.webp" alt="">
+  </div>
+
+</section>
 
 <body>
 </body>
