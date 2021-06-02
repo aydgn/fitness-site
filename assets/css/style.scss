@@ -21,9 +21,9 @@ a {
   }
 }
 
-
-
-
+.material-icons:hover {
+  color: #000;
+}
 
 
 /* HEADER START */
@@ -75,12 +75,10 @@ header {
   padding: 5rem 0 0 5rem;
   height: 600px;
   display: flex;
-  justify-self: flex-end;
 
   .hero-left {
 
     .hero-left-text {
-      margin-right: auto;
 
       h1,
       h4 {
@@ -92,21 +90,22 @@ header {
         width: 12ch;
         font-weight: 100;
         letter-spacing: -3px;
+
       }
 
       .date-author {
         color: #707070;
         font-weight: bold;
-        ;
+        margin-top: 1rem;
       }
     }
 
     .hero-left-desc {
       margin-left: -5rem;
-      margin-top: 3rem;
+      margin-top: 6rem;
       flex-direction: column;
       color: #707070;
-      width: 350px;
+      width: 335px;
 
       .hero-left-desc-text {
         margin-left: 6rem;

@@ -20,6 +20,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.material-icons:hover {
+  color: #000;
+}
+
 /* HEADER START */
 header {
   border-bottom: 1px solid #ccc;
@@ -58,10 +62,6 @@ header {
   padding: 5rem 0 0 5rem;
   height: 600px;
   display: flex;
-  justify-self: flex-end;
-}
-.hero .hero-left .hero-left-text {
-  margin-right: auto;
 }
 .hero .hero-left .hero-left-text h1,
 .hero .hero-left .hero-left-text h4 {
@@ -76,13 +76,14 @@ header {
 .hero .hero-left .hero-left-text .date-author {
   color: #707070;
   font-weight: bold;
+  margin-top: 1rem;
 }
 .hero .hero-left .hero-left-desc {
   margin-left: -5rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   flex-direction: column;
   color: #707070;
-  width: 350px;
+  width: 335px;
 }
 .hero .hero-left .hero-left-desc .hero-left-desc-text {
   margin-left: 6rem;
