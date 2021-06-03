@@ -1,7 +1,12 @@
+$sans: 'Raleway',
+sans-serif;
+$serif: 'Merriweather',
+serif;
+
 body {
   padding: 0;
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: $sans;
   font-weight: bold;
   max-width: 1440px;
   /* max-width for optimal desktop exp. */
@@ -39,7 +44,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
 
-
   nav {
     display: flex;
     gap: 2rem;
@@ -48,6 +52,7 @@ header {
       color: #707070;
       font-size: 11px;
       margin-top: 3px;
+      user-select: none;
     }
   }
 
@@ -82,7 +87,7 @@ header {
 
       h1,
       h4 {
-        font-family: 'Merriweather', serif;
+        font-family: $serif;
       }
 
       h1 {
@@ -97,6 +102,10 @@ header {
         color: #707070;
         font-weight: bold;
         margin-top: 1rem;
+
+        a {
+          color: inherit;
+        }
       }
     }
 
@@ -141,4 +150,90 @@ header {
     }
   }
 
+}
+
+/* MAIN */
+
+main {
+  font-size: 1.25rem;
+  font-family: $serif;
+  font-weight: normal;
+  width: 780px;
+  margin: 180px auto;
+  line-height: 2rem;
+
+  p {
+    margin: 2rem auto;
+    padding: 0 4rem;
+  }
+
+  p.dropcap:first-letter {
+    float: left;
+    font-size: 75px;
+    line-height: 65px;
+    padding: 5px 12px 0 0;
+  }
+
+  img.full {
+    width: 100%;
+    transition-property: all;
+    transition-duration: 250ms;
+
+    &:hover {
+      box-shadow: 0 0 15px #ccc;
+      transform: scale(1.02);
+    }
+  }
+
+  .info {
+    font-size: 1rem;
+    margin: 2rem 0;
+    padding: 2.5rem 2rem;
+    background: #707070 url("/assets/img/bg-pattern.jpg");
+
+    .title {
+      font-weight: bold;
+
+    }
+  }
+}
+
+
+footer {
+  background: #262626;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+
+    li:first-child {
+      font-weight: 900;
+      padding-bottom: 1.5rem;
+    }
+
+    &:last-child {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: auto 0;
+
+      li {
+        padding: 1rem;
+      }
+    }
+  }
 }

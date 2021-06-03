@@ -44,6 +44,7 @@ header {
   color: #707070;
   font-size: 11px;
   margin-top: 3px;
+  user-select: none;
 }
 .nav-container nav#right {
   align-items: center;
@@ -78,6 +79,9 @@ header {
   font-weight: bold;
   margin-top: 1rem;
 }
+.hero .hero-left .hero-left-text .date-author a {
+  color: inherit;
+}
 .hero .hero-left .hero-left-desc {
   margin-left: -5rem;
   margin-top: 6rem;
@@ -109,6 +113,78 @@ header {
 }
 .hero .hero-right img {
   width: 100%;
+}
+
+/* MAIN */
+main {
+  font-size: 1.25rem;
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  width: 780px;
+  margin: 180px auto;
+  line-height: 2rem;
+}
+main p {
+  margin: 2rem auto;
+  padding: 0 4rem;
+}
+main p.dropcap:first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 65px;
+  padding: 5px 12px 0 0;
+}
+main img.full {
+  width: 100%;
+  transition-property: all;
+  transition-duration: 250ms;
+}
+main img.full:hover {
+  box-shadow: 0 0 15px #ccc;
+  transform: scale(1.02);
+}
+main .info {
+  font-size: 1rem;
+  margin: 2rem 0;
+  padding: 2.5rem 2rem;
+  background: #707070 url("/bg-pattern.e70029ad.jpg");
+}
+main .info .title {
+  font-weight: bold;
+}
+
+footer {
+  background: #262626;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+footer ul li:first-child {
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+footer ul:last-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto 0;
+}
+footer ul:last-child li {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=/style.91c3ac3b.css.map */
