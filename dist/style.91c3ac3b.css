@@ -135,6 +135,10 @@ main p.dropcap:first-letter {
   line-height: 65px;
   padding: 5px 12px 0 0;
 }
+main img {
+  margin: 4rem 0;
+  width: 100%;
+}
 main img.full {
   width: 100%;
   transition-property: all;
@@ -145,21 +149,43 @@ main img.full:hover {
   transform: scale(1.02);
 }
 main .info {
+  max-width: 780px;
   font-size: 1rem;
-  margin: 2rem 0;
+  margin: 2rem 4rem;
   padding: 2.5rem 2rem;
   background: #707070 url("/bg-pattern.e70029ad.jpg");
 }
 main .info .title {
   font-weight: bold;
 }
+main .heading-with-number {
+  display: flex;
+  align-items: center;
+}
+main .title-num {
+  font-size: 2.5rem;
+  color: #EE4638;
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-left: -2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  border-radius: 999px;
+}
+main .more {
+  width: 100%;
+  padding: 2rem 1rem;
+  border: 1px solid #000;
+  text-align: center;
+}
 
 footer {
   background: #262626;
-  width: 100%;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 4rem;
 }
 footer ul {

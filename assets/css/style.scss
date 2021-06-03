@@ -175,6 +175,11 @@ main {
     padding: 5px 12px 0 0;
   }
 
+  img {
+    margin: 4rem 0;
+    width: 100%;
+  }
+
   img.full {
     width: 100%;
     transition-property: all;
@@ -187,25 +192,48 @@ main {
   }
 
   .info {
+    max-width: 780px;
     font-size: 1rem;
-    margin: 2rem 0;
+    margin: 2rem 4rem;
     padding: 2.5rem 2rem;
     background: #707070 url("/assets/img/bg-pattern.jpg");
 
     .title {
       font-weight: bold;
-
     }
+  }
+
+  .heading-with-number {
+    display: flex;
+    align-items: center
+  }
+
+  .title-num {
+    font-size: 2.5rem;
+    color: #EE4638;
+    border: 1px solid #000;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-left: -2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    border-radius: 999px;
+  }
+
+  .more {
+    width: 100%;
+    padding: 2rem 1rem;
+    border: 1px solid #000;
+    text-align: center;
   }
 }
 
-
 footer {
   background: #262626;
-  width: 100%;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 4rem;
 
   ul {
