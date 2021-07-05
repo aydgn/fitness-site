@@ -1,5 +1,5 @@
 # Fitness Site
-A design-to-HTML project.
+This was the first project I did as part of the "We Code Front-End Developer Bootcamp". I coded the given design from Dribbble.
 
 Design: https://dribbble.com/shots/8502411-Fitnessmagazine-com-Article-Page/ 
 
